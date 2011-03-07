@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe JStruct do
   it 'can roundtrip JSON' do
     klass = Class.new(JStruct.new(:foo, :bar))
