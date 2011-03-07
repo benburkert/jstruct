@@ -7,10 +7,10 @@ module JStruct
 
     def self.from(data)
       case data
-      when String   then from(JSON.parse(data))
-      when Array    then data.map {|o| from(o) }
-      when Hash     then from_hash(data)
-      when NilClass then nil
+      when String     then from(JSON.parse(data))
+      when Hash       then from_hash(data)
+      when Enumerable then data.map {|o| from(o) }
+      when NilClass   then nil
       else raise("Can't parse a #{data.class} into a #{self}")
       end
     end

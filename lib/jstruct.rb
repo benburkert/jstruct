@@ -12,7 +12,7 @@ module JStruct
 end
 
 require 'jstruct/jclass'
-require 'jstruct/ext/array'
+require 'jstruct/ext/enumerable'
 require 'jstruct/ext/hash'
 require 'jstruct/ext/integer'
 require 'jstruct/ext/object'
