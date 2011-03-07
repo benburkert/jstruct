@@ -1,3 +1,3 @@
 module JStruct
-  VERSION = '0.1.1.pre'
+  VERSION = '0.1.1'
 end
